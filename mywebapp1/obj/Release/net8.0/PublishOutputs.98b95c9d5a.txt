@@ -1,0 +1,7 @@
+/home/sidadmin/sid-apps/mywebapp1/finalv1/mywebapp1
+/home/sidadmin/sid-apps/mywebapp1/finalv1/appsettings.Development.json
+/home/sidadmin/sid-apps/mywebapp1/finalv1/appsettings.json
+/home/sidadmin/sid-apps/mywebapp1/finalv1/mywebapp1.dll
+/home/sidadmin/sid-apps/mywebapp1/finalv1/mywebapp1.deps.json
+/home/sidadmin/sid-apps/mywebapp1/finalv1/mywebapp1.runtimeconfig.json
+/home/sidadmin/sid-apps/mywebapp1/finalv1/mywebapp1.pdb

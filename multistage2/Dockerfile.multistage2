@@ -1,0 +1,11 @@
+FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build-env
+WORKDIR /app
+COPY . ./
+RUN dotnet restore
+RUN dotnet publish -c Release -o Output
+
+FROM mcr.microsoft.com/dotnet/aspnet:8.0
+ENV ASPNETCORE_URLS=http://+:5000
+WORKDIR /app/finalv2
+COPY --from=build-env /app/Output .
+ENTRYPOINT [ "dotnet" , "multistage2.dll" ]

@@ -1,0 +1,14 @@
+/home/sidadmin/sid-apps/console/bin/Release/net8.0/console
+/home/sidadmin/sid-apps/console/bin/Release/net8.0/console.deps.json
+/home/sidadmin/sid-apps/console/bin/Release/net8.0/console.runtimeconfig.json
+/home/sidadmin/sid-apps/console/bin/Release/net8.0/console.dll
+/home/sidadmin/sid-apps/console/bin/Release/net8.0/console.pdb
+/home/sidadmin/sid-apps/console/obj/Release/net8.0/console.GeneratedMSBuildEditorConfig.editorconfig
+/home/sidadmin/sid-apps/console/obj/Release/net8.0/console.AssemblyInfoInputs.cache
+/home/sidadmin/sid-apps/console/obj/Release/net8.0/console.AssemblyInfo.cs
+/home/sidadmin/sid-apps/console/obj/Release/net8.0/console.csproj.CoreCompileInputs.cache
+/home/sidadmin/sid-apps/console/obj/Release/net8.0/console.dll
+/home/sidadmin/sid-apps/console/obj/Release/net8.0/refint/console.dll
+/home/sidadmin/sid-apps/console/obj/Release/net8.0/console.pdb
+/home/sidadmin/sid-apps/console/obj/Release/net8.0/console.genruntimeconfig.cache
+/home/sidadmin/sid-apps/console/obj/Release/net8.0/ref/console.dll

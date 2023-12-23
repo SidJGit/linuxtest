@@ -1,0 +1,5 @@
+/home/sidadmin/sid-apps/console/bin/Release/net8.0/publish/console
+/home/sidadmin/sid-apps/console/bin/Release/net8.0/publish/console.dll
+/home/sidadmin/sid-apps/console/bin/Release/net8.0/publish/console.deps.json
+/home/sidadmin/sid-apps/console/bin/Release/net8.0/publish/console.runtimeconfig.json
+/home/sidadmin/sid-apps/console/bin/Release/net8.0/publish/console.pdb

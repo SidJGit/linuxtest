@@ -1,0 +1,7 @@
+/home/sidadmin/sid-apps/web/bin/Release/net8.0/publish/web
+/home/sidadmin/sid-apps/web/bin/Release/net8.0/publish/appsettings.Development.json
+/home/sidadmin/sid-apps/web/bin/Release/net8.0/publish/appsettings.json
+/home/sidadmin/sid-apps/web/bin/Release/net8.0/publish/web.dll
+/home/sidadmin/sid-apps/web/bin/Release/net8.0/publish/web.deps.json
+/home/sidadmin/sid-apps/web/bin/Release/net8.0/publish/web.runtimeconfig.json
+/home/sidadmin/sid-apps/web/bin/Release/net8.0/publish/web.pdb
