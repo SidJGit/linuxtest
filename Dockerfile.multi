@@ -1,0 +1,49 @@
+## Stage 1 Docker build in cache
+FROM ubuntu:20.04 AS build-env
+RUN apt update
+RUN apt install wget -y
+## install MS package for Dotnet
+RUN wget https://packages.microsoft.com/config/ubuntu/20.04/packages-microsoft-prod.deb -O packages-microsoft-prod.deb && \
+  dpkg -i packages-microsoft-prod.deb && \
+  rm packages-microsoft-prod.deb
+## Install SDK
+RUN apt-get update && \
+  apt-get install -y dotnet-sdk-8.0
+## change Working Directory
+WORKDIR /app
+## Copy source code
+COPY ./ .
+## VVIMP for receiving request
+ENV ASPNETCORE_URLS=http://+:5000
+## Restore *.csproj
+RUN dotnet restore
+## Publish app
+RUN dotnet publish -c Release -o finalV1
+
+
+## Stage 2 Copy finalv1 publish to run only DLL files with the help of ASP
+FROM ubuntu:20.04
+RUN apt update
+RUN apt install wget curl -y
+## install MS package for Dotnet
+RUN wget https://packages.microsoft.com/config/ubuntu/20.04/packages-microsoft-prod.deb -O packages-microsoft-prod.deb && \
+  dpkg -i packages-microsoft-prod.deb && \
+  rm packages-microsoft-prod.deb
+
+## VVIMP for receiving request
+ENV ASPNETCORE_URLS=http://+:5000
+
+## install aspdotnetcore runtime
+RUN apt-get update && \
+  apt-get install -y aspnetcore-runtime-8.0
+
+WORKDIR /app
+
+COPY --from=build-env /app/finalV1 .
+
+EXPOSE 5000
+
+WORKDIR /app
+
+CMD dotnet multistagedf.dll
+
